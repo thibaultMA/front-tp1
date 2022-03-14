@@ -5,6 +5,10 @@
   --jaune:#FBD784;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -177,13 +181,13 @@ header .Account svg {
   text-align: right;
 }
 
-#intro .aside-right .start-left p {
+#intro .aside-right .start-left a {
   padding-right: 30px;
   height: 100%;
   position: relative;
 }
 
-#intro .aside-right .start-left p:first-child:after {
+#intro .aside-right .start-left a:first-child:after {
   content: ' ';
   width: 2px;
   height: 170%;

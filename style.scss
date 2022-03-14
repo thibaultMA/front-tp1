@@ -5,7 +5,9 @@
     --lien:#fff;
     --jaune:#FBD784;
 }             
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;padding: 0;
     background: url(./img/background.jpg)  no-repeat  #0a1c26;
@@ -111,7 +113,7 @@ header{
             flex-flow: column;
             justify-content: space-between;
             text-align: right;
-            p{
+            a{
                 padding-right: 30px;
                 height: 100%;
                 position: relative;
