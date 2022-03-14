@@ -1,0 +1,195 @@
+@import url('http://fonts.cdnfonts.com/css/chronicle-display');
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+:root{
+    --lien:#fff;
+    --jaune:#FBD784;
+}             
+
+body{
+    margin: 0;padding: 0;
+    background: url(./img/background.jpg) no-repeat #0a1c26;
+    
+    color: #FFF;
+    font-family: "Gilroy"
+    
+}
+
+a{
+    color: var(--lien);
+    text-decoration: none;
+}
+h1,h2{
+    font-family: 'Chronicle Display';
+}
+header{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+
+    .nav-list{
+        padding: 0;
+        justify-content: space-between;
+        display: flex;
+        list-style: none;
+
+        a{
+            margin: 10px 20px;
+        }
+    }
+    .Account{
+        display: flex;
+        svg{
+            margin: 5px;
+        }
+    }
+}
+#intro{
+    width: 90%;
+    margin:200px auto;
+    display: flex;
+    justify-content: space-between;
+    .aside-left{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        .follow{
+            transform: rotate(90deg);
+            margin-bottom: 25px;
+        }
+        .icon-follow{
+            margin: 25px;
+        }
+    }
+    .center-box{
+        width: 60%;
+        .titre{
+            font-weight: 600;
+            font-size: 88px;
+            margin: 0;
+        }
+        .scroll-btn{
+            display: flex;
+            p{
+                margin: 10px;
+                font-weight: 700
+            }
+        }
+    }
+    .aside-right{
+        display: flex;
+        border-right: inset #ffffff80 ;
+        
+        .start-left{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            text-align: right;
+            p{
+                padding-right: 30px;
+                height: 100%;
+                position: relative;
+                &:first-child:after{
+                    content: ' ';
+                    width: 2px;
+                    height: 170%;
+                    position: absolute;
+                    top: -15px;
+                    right: -3px;
+                    border-right: inset #ffffff ;
+                }
+            }
+        }
+    }
+}
+#contenu{
+    margin-top: 90vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .article-montagne{
+        width: 80%; 
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:nth-child(even){
+            flex-flow: row-reverse;
+        }
+        .description{
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            margin: auto;
+            width: 42%;
+            .numero{
+                position: absolute;
+                bottom: 26px;
+                left: -21.6%;
+                font-size: 240px;
+                font-weight: bold;
+                opacity: 0.1;
+            }
+            .article-titre{
+                font-size:64px ;
+                margin: 27px 0px;
+            }
+            .article-description{
+                line-height: 32px;
+            }
+            .more{
+                color: var(--jaune);
+                display: flex;
+                align-items: center;
+                .fleche-bas{
+                    margin: 15px;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+
+.guide{
+
+    display: flex;
+    align-items: center;
+    color: var(--jaune);
+    letter-spacing: 6px;
+    font-weight: 800;
+    .barre-horizontal{
+        width: 72px;
+        height: 2px;
+        margin-right: 25px;
+        background: var(--jaune);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 100px auto;
+    .footer-Box{
+        display: flex;
+        width: 36%;
+        justify-content: space-between;
+        article{
+            display: flex; 
+            flex-flow: column;
+            h4{
+                color: var(--jaune);
+            }
+            .copyright{
+                justify-self: flex-end;
+                opacity: 0.5;
+            }
+        }
+        .footer-nav{
+            line-height: 32px;
+        }
+    }
+}

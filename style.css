@@ -1,0 +1,304 @@
+@import url("http://fonts.cdnfonts.com/css/chronicle-display");
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+:root {
+  --lien:#fff;
+  --jaune:#FBD784;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./img/background.jpg) no-repeat #0a1c26;
+  color: #FFF;
+  font-family: "Gilroy";
+}
+
+a {
+  color: var(--lien);
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Chronicle Display';
+}
+
+header {
+  width: 90%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+header .nav-list {
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header .nav-list a {
+  margin: 10px 20px;
+}
+
+header .Account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .Account svg {
+  margin: 5px;
+}
+
+#intro {
+  width: 90%;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#intro .aside-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#intro .aside-left .follow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-bottom: 25px;
+}
+
+#intro .aside-left .icon-follow {
+  margin: 25px;
+}
+
+#intro .center-box {
+  width: 60%;
+}
+
+#intro .center-box .titre {
+  font-weight: 600;
+  font-size: 88px;
+  margin: 0;
+}
+
+#intro .center-box .scroll-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#intro .center-box .scroll-btn p {
+  margin: 10px;
+  font-weight: 700;
+}
+
+#intro .aside-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: inset #ffffff80;
+}
+
+#intro .aside-right .start-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
+}
+
+#intro .aside-right .start-left p {
+  padding-right: 30px;
+  height: 100%;
+  position: relative;
+}
+
+#intro .aside-right .start-left p:first-child:after {
+  content: ' ';
+  width: 2px;
+  height: 170%;
+  position: absolute;
+  top: -15px;
+  right: -3px;
+  border-right: inset #ffffff;
+}
+
+#contenu {
+  margin-top: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenu .article-montagne {
+  width: 80%;
+  margin: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contenu .article-montagne:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+#contenu .article-montagne .description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: auto;
+  width: 42%;
+}
+
+#contenu .article-montagne .description .numero {
+  position: absolute;
+  bottom: 26px;
+  left: -21.6%;
+  font-size: 240px;
+  font-weight: bold;
+  opacity: 0.1;
+}
+
+#contenu .article-montagne .description .article-titre {
+  font-size: 64px;
+  margin: 27px 0px;
+}
+
+#contenu .article-montagne .description .article-description {
+  line-height: 32px;
+}
+
+#contenu .article-montagne .description .more {
+  color: var(--jaune);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenu .article-montagne .description .more .fleche-bas {
+  margin: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.guide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--jaune);
+  letter-spacing: 6px;
+  font-weight: 800;
+}
+
+.guide .barre-horizontal {
+  width: 72px;
+  height: 2px;
+  margin-right: 25px;
+  background: var(--jaune);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+}
+
+footer .footer-Box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 36%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-Box article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+footer .footer-Box article h4 {
+  color: var(--jaune);
+}
+
+footer .footer-Box article .copyright {
+  justify-self: flex-end;
+  opacity: 0.5;
+}
+
+footer .footer-Box .footer-nav {
+  line-height: 32px;
+}
+/*# sourceMappingURL=style.css.map */
