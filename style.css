@@ -427,7 +427,13 @@ footer {
             flex-flow: column-reverse;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 45px;
+    margin: 45px auto;
+  }
+}
+
+@media (max-width: 504px) {
+  footer {
+    margin: 0 auto;
   }
 }
 
@@ -453,6 +459,13 @@ footer .footer-Box {
     margin: 25px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (max-width: 504px) {
+  footer .footer-Box {
+    width: 99%;
+    margin: 0;
   }
 }
 
