@@ -1,34 +1,39 @@
 @import url('http://fonts.cdnfonts.com/css/chronicle-display');
 @import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
 :root{
     --lien:#fff;
     --jaune:#FBD784;
 }             
 
 body{
-    margin: 0;padding: 0;
+    margin: auto;padding: 0;
     background: url(./img/background.jpg) no-repeat #0a1c26;
+    background-size: contain;
     
     color: #FFF;
-    font-family: "Gilroy"
+    font-family: "Gilroy";
     
+    max-width: 1980px;
 }
 
 a{
     color: var(--lien);
     text-decoration: none;
 }
-h1,h2{
+h1,
+h2{
     font-family: 'Chronicle Display';
 }
 header{
     width: 90%;
+    max-width: 1980px;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-
+    
     .nav-list{
         padding: 0;
         justify-content: space-between;
@@ -119,6 +124,9 @@ header{
         &:nth-child(even){
             flex-flow: row-reverse;
         }
+        @media (max-width:1474) {
+            
+        }
         .description{
             position: relative;
             display: flex;
@@ -127,11 +135,17 @@ header{
             width: 42%;
             .numero{
                 position: absolute;
-                bottom: 26px;
+                bottom: 11%;
                 left: -21.6%;
                 font-size: 240px;
                 font-weight: bold;
                 opacity: 0.1;
+                @media (max-width:1818px) {
+                    bottom: 17%;
+                }
+                @media (max-width:1451px) {
+                    bottom: 23%;
+                }
             }
             .article-titre{
                 font-size:64px ;
@@ -184,7 +198,7 @@ footer{
                 color: var(--jaune);
             }
             .copyright{
-                justify-self: flex-end;
+                // flex-grow: 2; 
                 opacity: 0.5;
             }
         }

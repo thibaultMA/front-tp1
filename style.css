@@ -6,11 +6,13 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   background: url(./img/background.jpg) no-repeat #0a1c26;
+  background-size: contain;
   color: #FFF;
   font-family: "Gilroy";
+  max-width: 1980px;
 }
 
 a {
@@ -18,12 +20,14 @@ a {
   text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Chronicle Display';
 }
 
 header {
   width: 90%;
+  max-width: 1980px;
   margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,11 +211,23 @@ header .Account svg {
 
 #contenu .article-montagne .description .numero {
   position: absolute;
-  bottom: 26px;
+  bottom: 11%;
   left: -21.6%;
   font-size: 240px;
   font-weight: bold;
   opacity: 0.1;
+}
+
+@media (max-width: 1818px) {
+  #contenu .article-montagne .description .numero {
+    bottom: 17%;
+  }
+}
+
+@media (max-width: 1451px) {
+  #contenu .article-montagne .description .numero {
+    bottom: 23%;
+  }
 }
 
 #contenu .article-montagne .description .article-titre {
@@ -294,7 +310,6 @@ footer .footer-Box article h4 {
 }
 
 footer .footer-Box article .copyright {
-  justify-self: flex-end;
   opacity: 0.5;
 }
 
