@@ -255,13 +255,30 @@ footer{
     justify-content: space-between;
     width: 80%;
     margin: 100px auto;
+    @media (max-width:708px) {
+        flex-flow: column-reverse;
+        justify-content: space-around;
+        margin: 45px;
+    }
+    
     .footer-Box{
         display: flex;
         width: 36%;
         justify-content: space-between;
+        @media (max-width:1024px) {
+            width: 60%;
+            
+        }
+        @media (max-width:708px) {
+            width: 90%;
+            margin: 25px;
+            justify-content: space-around;
+        }
+
         article{
             display: flex; 
             flex-flow: column;
+            
             h4{
                 color: var(--jaune);
             }

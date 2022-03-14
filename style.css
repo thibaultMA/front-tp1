@@ -419,6 +419,18 @@ footer {
   margin: 100px auto;
 }
 
+@media (max-width: 708px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 45px;
+  }
+}
+
 footer .footer-Box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +439,21 @@ footer .footer-Box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  footer .footer-Box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 708px) {
+  footer .footer-Box {
+    width: 90%;
+    margin: 25px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 footer .footer-Box article {
