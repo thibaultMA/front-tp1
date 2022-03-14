@@ -40,7 +40,7 @@ header {
       flex-flow: wrap;
 }
 
-@media (max-width: 545px) {
+@media (max-width: 546px) {
   header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
