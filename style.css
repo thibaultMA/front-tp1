@@ -40,11 +40,26 @@ header {
       flex-flow: wrap;
 }
 
+@media (max-width: 545px) {
+  header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  header .Account {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 15px;
+  }
+}
+
 header .nav-list {
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +268,7 @@ header .Account svg {
 
 @media (max-width: 768px) {
   #contenu .article-montagne {
-    margin: 150px 0;
+    margin: 125px 0;
   }
 }
 

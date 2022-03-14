@@ -31,10 +31,19 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-
+    @media (max-width:545px) {
+        justify-content: space-around;
+        nav{
+            order: 3;
+        }
+        .Account{
+            order: 2;
+            margin: 15px;
+        }
+    }
     .nav-list{
         padding: 0;
-        justify-content: space-between;
+        // justify-content: space-between;
         display: flex;
         list-style: none;
 
@@ -47,6 +56,7 @@ header{
         svg{
             margin: 5px;
         }
+        
     }
 }
 #intro{
@@ -151,7 +161,7 @@ header{
             flex-flow: column;
         }
         @media (max-width:768px) {
-            margin: 150px 0;
+            margin: 125px 0;
         }
         &:nth-child(even){
             flex-flow: row-reverse;
@@ -182,7 +192,6 @@ header{
             }
             @media (max-width:651px) {
                 width: 90%;
-
             }
             .numero{
                 position: absolute;
