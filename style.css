@@ -6,13 +6,12 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
   background: url(./img/background.jpg) no-repeat #0a1c26;
   background-size: contain;
   color: #FFF;
   font-family: "Gilroy";
-  max-width: 1980px;
 }
 
 a {
@@ -25,9 +24,15 @@ h2 {
   font-family: 'Chronicle Display';
 }
 
+@media (max-width: 977px) {
+  h1,
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+
 header {
   width: 90%;
-  max-width: 1980px;
   margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +43,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
 }
 
 header .nav-list {
@@ -109,7 +113,7 @@ header .Account svg {
 
 #intro .center-box .titre {
   font-weight: 600;
-  font-size: 88px;
+  font-size: 5rem;
   margin: 0;
 }
 
@@ -196,6 +200,22 @@ header .Account svg {
           flex-flow: row-reverse;
 }
 
+#contenu .article-montagne:nth-child(even) .description {
+  margin: 0;
+}
+
+@media (max-width: 1818px) {
+  #contenu .article-montagne {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1257px) {
+  #contenu .article-montagne .article-img {
+    width: 47%;
+  }
+}
+
 #contenu .article-montagne .description {
   position: relative;
   display: -webkit-box;
@@ -211,27 +231,21 @@ header .Account svg {
 
 #contenu .article-montagne .description .numero {
   position: absolute;
-  bottom: 11%;
   left: -21.6%;
-  font-size: 240px;
+  font-size: 15rem;
   font-weight: bold;
   opacity: 0.1;
+  color: var(--lien);
 }
 
-@media (max-width: 1818px) {
+@media (max-width: 1074px) {
   #contenu .article-montagne .description .numero {
-    bottom: 17%;
-  }
-}
-
-@media (max-width: 1451px) {
-  #contenu .article-montagne .description .numero {
-    bottom: 23%;
+    font-size: 9rem;
   }
 }
 
 #contenu .article-montagne .description .article-titre {
-  font-size: 64px;
+  font-size: 4rem;
   margin: 27px 0px;
 }
 
@@ -265,6 +279,7 @@ header .Account svg {
   color: var(--jaune);
   letter-spacing: 6px;
   font-weight: 800;
+  position: relative;
 }
 
 .guide .barre-horizontal {
