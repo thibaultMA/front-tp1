@@ -24,13 +24,6 @@ h2 {
   font-family: 'Chronicle Display';
 }
 
-@media (max-width: 977px) {
-  h1,
-  h2 {
-    font-size: 3rem !important;
-  }
-}
-
 header {
   width: 90%;
   margin: 20px auto;
@@ -43,6 +36,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 header .nav-list {
@@ -81,6 +76,12 @@ header .Account svg {
           justify-content: space-between;
 }
 
+@media (max-width: 784px) {
+  #intro {
+    margin: 100px auto;
+  }
+}
+
 #intro .aside-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +116,18 @@ header .Account svg {
   font-weight: 600;
   font-size: 5rem;
   margin: 0;
+}
+
+@media (max-width: 1074px) {
+  #intro .center-box .titre {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 784px) {
+  #intro .center-box .titre {
+    font-size: 2rem;
+  }
 }
 
 #intro .center-box .scroll-btn {
@@ -166,7 +179,7 @@ header .Account svg {
 }
 
 #contenu {
-  margin-top: 90vh;
+  margin-top: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +190,30 @@ header .Account svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1592px) {
+  #contenu {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 1302px) {
+  #contenu {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 1079px) {
+  #contenu {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 923px) {
+  #contenu {
+    margin-top: 0;
+  }
 }
 
 #contenu .article-montagne {
@@ -193,6 +230,33 @@ header .Account svg {
           justify-content: space-between;
 }
 
+@media (max-width: 1818px) {
+  #contenu .article-montagne {
+    width: 90%;
+  }
+}
+
+@media (max-width: 923px) {
+  #contenu .article-montagne {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #contenu .article-montagne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (max-width: 768px) {
+  #contenu .article-montagne {
+    margin: 150px 0;
+  }
+}
+
 #contenu .article-montagne:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -200,19 +264,28 @@ header .Account svg {
           flex-flow: row-reverse;
 }
 
-#contenu .article-montagne:nth-child(even) .description {
-  margin: 0;
+@media (max-width: 768px) {
+  #contenu .article-montagne:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
 }
 
-@media (max-width: 1818px) {
-  #contenu .article-montagne {
-    width: 90%;
-  }
+#contenu .article-montagne:nth-child(even) .description {
+  margin: 0;
 }
 
 @media (max-width: 1257px) {
   #contenu .article-montagne .article-img {
     width: 47%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contenu .article-montagne .article-img {
+    width: 60%;
   }
 }
 
@@ -229,8 +302,21 @@ header .Account svg {
   width: 42%;
 }
 
+@media (max-width: 768px) {
+  #contenu .article-montagne .description {
+    width: 70%;
+  }
+}
+
+@media (max-width: 651px) {
+  #contenu .article-montagne .description {
+    width: 90%;
+  }
+}
+
 #contenu .article-montagne .description .numero {
   position: absolute;
+  margin: 0;
   left: -21.6%;
   font-size: 15rem;
   font-weight: bold;
@@ -244,9 +330,21 @@ header .Account svg {
   }
 }
 
+@media (max-width: 651px) {
+  #contenu .article-montagne .description .numero {
+    left: -10%;
+  }
+}
+
 #contenu .article-montagne .description .article-titre {
   font-size: 4rem;
   margin: 27px 0px;
+}
+
+@media (max-width: 1074px) {
+  #contenu .article-montagne .description .article-titre {
+    font-size: 2rem;
+  }
 }
 
 #contenu .article-montagne .description .article-description {
@@ -280,6 +378,12 @@ header .Account svg {
   letter-spacing: 6px;
   font-weight: 800;
   position: relative;
+}
+
+@media (max-width: 1074px) {
+  .guide {
+    font-size: 0.7rem;
+  }
 }
 
 .guide .barre-horizontal {
